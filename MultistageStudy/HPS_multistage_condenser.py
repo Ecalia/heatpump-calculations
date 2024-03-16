@@ -1,6 +1,6 @@
 from HeatPumpStudy import HeatPumpStudy, alternate
 from tespy.components import (Valve, Sink, Source, Pump, Compressor,
-                              HeatExchanger, Turbine, CycleCloser, HeatExchangerSimple)
+                              HeatExchanger, Turbine, CycleCloser, SimpleHeatExchanger)
 from tespy.connections import Connection
 from tespy.networks import Network
 from CoolProp.CoolProp import PropsSI as PSI
@@ -36,7 +36,7 @@ class InternalCondenserHeatPumpStudy(HeatPumpStudy):
         # fmt: off
         component_list = [
             # heat pump
-                            ("evaporator", HeatExchangerSimple),
+                            ("evaporator", SimpleHeatExchanger),
  *alternate(self.repeat_comp("compressor", Compressor),
             self.repeat_comp("intermediate_hx", HeatExchanger)),
                             (f"compressor_{N+1}", Compressor),
@@ -45,7 +45,7 @@ class InternalCondenserHeatPumpStudy(HeatPumpStudy):
                             ("cycle_closer", CycleCloser),
             # consumer
                             ("consumer_pump", Pump),
-                            ("consumer", HeatExchangerSimple),
+                            ("consumer", SimpleHeatExchanger),
                             ("consumer_cycle_closer", CycleCloser),
         ]
 
@@ -70,7 +70,7 @@ class InternalCondenserHeatPumpStudy(HeatPumpStudy):
         # fmt: on
 
         self.add_components_and_connections(component_list, connection_list)
-        # self.add_condenser_cooling()# need to change condenser type to Condenser when used and HeatExchangerSimple when not used
+        # self.add_condenser_cooling()# need to change condenser type to Condenser when used and SimpleHeatExchanger when not used
 
     def set_boundary_conditions(self, T_cond=80, T_evap=-10, T_consumer=60):
 

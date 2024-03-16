@@ -5,7 +5,7 @@ from tespy.components import (
     Compressor,
     Source,
     Sink,
-    HeatExchangerSimple,
+    SimpleHeatExchanger,
     CycleCloser,
 )
 
@@ -30,7 +30,7 @@ class MobileAirConditioner(HeatPumpStudy):
         component_list = [
             ("source", Source),
             ("compressor", Compressor),
-            ("heat_exchanger", HeatExchangerSimple),
+            ("heat_exchanger", SimpleHeatExchanger),
             ("expander", Turbine),
             ("sink", Sink),
         ]

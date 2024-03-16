@@ -11,7 +11,7 @@ from tespy.components import (
     Condenser,
     Turbine,
     CycleCloser,
-    HeatExchangerSimple,
+    SimpleHeatExchanger,
     HeatExchanger,
 )
 from tespy.components.component import Component
@@ -19,7 +19,6 @@ from tespy.connections import Connection
 from tespy.networks import Network
 from CoolProp.CoolProp import PropsSI as PSI
 from typing import Dict
-import inspect
 
 
 class HeatPumpStudy:
@@ -133,7 +132,7 @@ class HeatPumpStudy:
         component_list = [
             # ("condenser", HeatExchanger), TODO: replace simple condenser with normal condenser
             ("consumer_pump", Pump),
-            ("consumer", HeatExchangerSimple),
+            ("consumer", SimpleHeatExchanger),
             ("consumer_cycle_closer", CycleCloser),
         ]
 
@@ -162,10 +161,10 @@ class HeatPumpStudy:
         )
         return Q / W
 
-    def efficiency_matrix(self):
+    def efficiency_matrix(self, evap_range = (-10,11,5), cond_range =(50,71,5)):
         # Calculate the efficiency of the heat pump system for each combination of condensation and evaporation temperature in 5K increments
-        condensation_temps = np.arange(50, 71, 5)
-        evaporation_temps = np.arange(-10, 11, 5)
+        condensation_temps = np.arange(cond_range[0], cond_range[1], cond_range[2])
+        evaporation_temps = np.arange(evap_range[0], evap_range[1], evap_range[2])
         efficiency_matrix = np.zeros((len(condensation_temps), len(evaporation_temps)))
 
         for i, T_cond in enumerate(condensation_temps):
@@ -190,7 +189,7 @@ class HeatPumpStudy:
                 results[comp.label] = comp.get_plotting_data()[1]
         return results
 
-    def plot_ts_diag(self, filename, x_min=1500, x_max=2500, y_min=-30, y_max=120):
+    def plot_ts_diag(self, filename, x_min=1000, x_max=2500, y_min=-30, y_max=120):
         from fluprodia import FluidPropertyDiagram
 
         diagram = FluidPropertyDiagram(self.working_fluid)
@@ -200,21 +199,18 @@ class HeatPumpStudy:
         for key, data in result_dict.items():
             result_dict[key]["datapoints"] = diagram.calc_individual_isoline(**data)
 
-        diagram.set_limits(x_min=x_min, x_max=x_max, y_min=y_min, y_max=y_max)
-
         T = np.arange(-50, 101, 5)
         Q = np.linspace(0, 1, 41)
+        fig, ax = plt.subplots(1, figsize=(8, 5))
         diagram.set_isolines(T=T, Q=Q)
         diagram.calc_isolines()
-        mydata = {"Q": {"values": Q}, "T": {"values": T}}
-        diagram.calc_isolines()
-        diagram.draw_isolines("Ts", isoline_data=mydata)
+        diagram.draw_isolines(diagram_type="Ts",  fig=fig, ax=ax, x_min=x_min, x_max=x_max, y_min=y_min, y_max=y_max)
 
         for key in result_dict:
             datapoints = result_dict[key]["datapoints"]
-            diagram.ax.plot(datapoints["s"], datapoints["T"], color="#ff0000")
-            diagram.ax.scatter(datapoints["s"][0], datapoints["T"][0], color="#ff0000")
-            diagram.ax.annotate(
+            ax.plot(datapoints["s"], datapoints["T"], color="#ff0000")
+            ax.scatter(datapoints["s"][0], datapoints["T"][0], color="#ff0000")
+            ax.annotate(
                 key,
                 ((datapoints["s"][0]+datapoints["s"][-1])/2, (datapoints["T"][0]+datapoints["T"][-1])/2),
                 textcoords="offset points",
@@ -222,7 +218,7 @@ class HeatPumpStudy:
                 ha="left",
             )
 
-        diagram.save(f"{filename}.svg")
+        fig.savefig(f"{filename}.svg")
 
     def plot_logph_diag(self, filename, x_min=300, x_max=700, y_min=1e0, y_max=6e1):
         from fluprodia import FluidPropertyDiagram
@@ -235,23 +231,22 @@ class HeatPumpStudy:
         for key, data in result_dict.items():
             result_dict[key]["datapoints"] = diagram.calc_individual_isoline(**data)
 
-        diagram.set_limits(x_min=x_min, x_max=x_max, y_min=y_min, y_max=y_max)
-
+        fig, ax = plt.subplots(1, figsize=(8, 5))
         T = np.arange(-50, 201, 5)
         Q = np.linspace(0, 1, 41)
         diagram.set_isolines(T=T, Q=Q)
         diagram.calc_isolines()
         mydata = {"Q": {"values": Q}, "T": {"values": T}}
         diagram.calc_isolines()
-        diagram.draw_isolines("logph", isoline_data=mydata)
+        diagram.draw_isolines(diagram_type="logph",  fig=fig, ax=ax,isoline_data=mydata, x_min=x_min, x_max=x_max, y_min=y_min, y_max=y_max)
 
         for key in result_dict:
             # calculate the relative coordinates of the center of the line and place the label there
 
             datapoints = result_dict[key]["datapoints"]
-            diagram.ax.plot(datapoints["h"], datapoints["p"], color="#ff0000")
-            diagram.ax.scatter(datapoints["h"][0], datapoints["p"][0], color="#ff0000")
-            diagram.ax.annotate(
+            ax.plot(datapoints["h"], datapoints["p"], color="#ff0000")
+            ax.scatter(datapoints["h"][0], datapoints["p"][0], color="#ff0000")
+            ax.annotate(
                 key,
                 ((datapoints["h"][0]+datapoints["h"][-1])/2, (datapoints["p"][0]+datapoints["p"][-1])/2),
                 textcoords="offset points",
@@ -259,14 +254,15 @@ class HeatPumpStudy:
                 ha="left"
             )
 
-        diagram.save(f"{filename}.svg")
+        fig.savefig(f"{filename}.svg")
 
-    def plot_efficiency(self, filename, efficiency_matrix=None):
+    def plot_efficiency(self, filename, evap_range = (-10,11,5), cond_range =(50,71,5), efficiency_matrix = None):
+
         if efficiency_matrix is None:
-            efficiency_matrix = self.efficiency_matrix()
+            efficiency_matrix = self.efficiency_matrix(evap_range,cond_range)
 
-        condensation_temps = np.arange(50, 71, 5)
-        evaporation_temps = np.arange(-10, 11, 5)
+        condensation_temps = np.arange(cond_range[0], cond_range[1], cond_range[2])
+        evaporation_temps = np.arange(evap_range[0], evap_range[1], evap_range[2])
 
         # Plot the efficiency matrix as a heatmap with the values in the cells
         fig, ax = plt.subplots()
@@ -295,21 +291,23 @@ class HeatPumpStudy:
                     color="g",
                 )
 
-        ax.set_title("Heat Pump Efficiency")
+        ax.set_title("Coefficient of Performance")
         ax.set_xlabel("Evaporation Temperature (°C)")
         ax.set_ylabel("Condensation Temperature (°C)")
 
-        plt.savefig(f"{filename}.png")
-        plt.show()
-        return efficiency_matrix
+        fig.savefig(f"{filename}.png")
+        return (ax,fig)
 
-    def plot_relative_efficiency(self, filename, comparison_matrix):
-        efficiency_matrix = self.efficiency_matrix()
+    def plot_relative_efficiency(self, filename, comparison_matrix, evap_range = (-10,11,5), cond_range =(50,71,5)):
+        efficiency_matrix = self.efficiency_matrix(evap_range, cond_range)
         # convert to percentage of improvement
         efficiency_matrix = (
             (efficiency_matrix - comparison_matrix) / comparison_matrix * 100
         )
-        return self.plot_efficiency(filename, efficiency_matrix)
+        ax,fig = self.plot_efficiency(filename, evap_range, cond_range, efficiency_matrix)
+        ax.set_title("Relative Improvement in COP")
+        fig.savefig(f"{filename}.png")
+        return efficiency_matrix
 
     def get_delta_T(self):
         return self.get_T_max() - self.get_T_min()
@@ -328,9 +326,7 @@ class HeatPumpStudy:
             ):
                 return self.conn[key].get_attr("T").val
 
-
 from itertools import chain
-
 
 def alternate(*lists):
     return list(chain.from_iterable(zip(*lists)))
