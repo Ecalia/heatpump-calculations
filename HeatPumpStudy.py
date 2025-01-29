@@ -73,6 +73,9 @@ class HeatPumpStudy:
             print(name)
 
     def solve(self, mode="design", **args):
+        # check if self.network is not None
+        if self.network is None:
+            raise ValueError("Network has not been set up. Call setup_network() first")
         self.network.solve(mode=mode, design_path="HeatPumpStudy", **args)
         return self
 
@@ -170,6 +173,9 @@ class HeatPumpStudy:
         for i, T_cond in enumerate(condensation_temps):
             for j, T_evap in enumerate(evaporation_temps):
                 self.set_boundary_conditions(T_cond, T_evap)
+                # check if self.network is not None
+                if self.network is None:
+                    raise ValueError("Network has not been set up. Call setup_network() first")
                 self.network.solve("design")
                 COP = self.calculate_cop()
                 efficiency_matrix[i, j] = COP
@@ -186,7 +192,9 @@ class HeatPumpStudy:
                 results[f"{comp.label}_1"] = comp.get_plotting_data()[1]
                 results[f"{comp.label}_2"] = comp.get_plotting_data()[2]
             elif not isinstance(comp, (CycleCloser, Splitter)):
-                results[comp.label] = comp.get_plotting_data()[1]
+                plotting_data = comp.get_plotting_data()
+                if plotting_data is not None:
+                    results[comp.label] = plotting_data[1]
         return results
 
     def plot_ts_diag(self, filename, x_min=1000, x_max=2500, y_min=-30, y_max=120):

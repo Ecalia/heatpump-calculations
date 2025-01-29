@@ -89,10 +89,9 @@ class IntercoolerHeatPumpStudy(HeatPumpStudy):
 
         self.comp[f"compressor_{self.N+1}"].set_attr(eta_s=self.compressor_efficiency)
         self.comp["condenser"].set_attr(pr=0.98, Q=-self.Q_out)
-        if self.expansion_device == "expansionValve":
-            self.conn["condenser-expansionValve"].set_attr(x=0)
-        elif self.expansion_device == "expander":
-            self.conn["condenser-expander"].set_attr(x=0.01)            
+        self.conn["condenser-expansionValve"].set_attr(x=0)
+        if self.expansion_device == "expander":
+            self.conn["expansionValve-expander"].set_attr(x=0.01)            
             self.comp["expander"].set_attr(eta_s=self.expander_efficiency)
 
         return self

@@ -105,7 +105,7 @@ class InternalCondenserHeatPumpStudy(HeatPumpStudy):
         if self.expansion_device == "expansionValve":
             self.conn["condenser-expansionValve"].set_attr(x=0)
         elif self.expansion_device == "expander":
-            self.conn["condenser-expander"].set_attr(x=0.05)            
+            self.conn["expansionValve-expander"].set_attr(x=0.05)            
             self.comp["expander"].set_attr(eta_s=self.expander_efficiency)
 
         # consumer
