@@ -79,12 +79,20 @@ class HeatPumpStudy:
         self.network.solve(mode=mode, design_path="HeatPumpStudy", **args)
         return self
 
+    def setup_components_and_connections(self):
+        print(
+            "setting boundary conditions is not implemented in parent class. use subclass"
+        )
+        # throw error: function not implemented in parent class. use subclass
+        pass
+    
     def set_boundary_conditions(self, T_cond=60, T_evap=10):
         print(
             "setting boundary conditions is not implemented in parent class. use subclass"
         )
         # throw error: function not implemented in parent class. use subclass
         pass
+        return self
 
     """ 
         summary: repeat a component N times
@@ -206,7 +214,6 @@ class HeatPumpStudy:
         result_dict = self.get_results()
         for key, data in result_dict.items():
             result_dict[key]["datapoints"] = diagram.calc_individual_isoline(**data)
-
         T = np.arange(-50, 101, 5)
         Q = np.linspace(0, 1, 41)
         fig, ax = plt.subplots(1, figsize=(8, 5))
@@ -225,7 +232,6 @@ class HeatPumpStudy:
                 xytext=(5, 5),
                 ha="left",
             )
-
         fig.savefig(f"{filename}.svg")
 
     def plot_logph_diag(self, filename, x_min=300, x_max=700, y_min=1e0, y_max=6e1):
@@ -240,6 +246,7 @@ class HeatPumpStudy:
             result_dict[key]["datapoints"] = diagram.calc_individual_isoline(**data)
 
         fig, ax = plt.subplots(1, figsize=(8, 5))
+
         T = np.arange(-50, 201, 5)
         Q = np.linspace(0, 1, 41)
         diagram.set_isolines(T=T, Q=Q)
@@ -259,7 +266,7 @@ class HeatPumpStudy:
                 ((datapoints["h"][0]+datapoints["h"][-1])/2, (datapoints["p"][0]+datapoints["p"][-1])/2),
                 textcoords="offset points",
                 xytext = (5, 5),
-                ha="left"
+                ha="left",
             )
 
         fig.savefig(f"{filename}.svg")
