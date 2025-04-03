@@ -8,7 +8,7 @@ from tespy.components import (
     HeatExchanger,
     Turbine,
     CycleCloser,
-    HeatExchangerSimple,
+    SimpleHeatExchanger,
 )
 from tespy.connections import Connection
 
@@ -34,11 +34,11 @@ class VaporInjectionHeatPumpStudy(HeatPumpStudy):
          *alternate(self.repeat_comp(self.expansion_device, expansion_type),
                     self.repeat_comp("splitter", Splitter)),
                                     (f"{self.expansion_device}_{N+1}", expansion_type),
-                                    ("evaporator", HeatExchangerSimple),
+                                    ("evaporator", SimpleHeatExchanger),
          *alternate(self.repeat_comp("compressor", Compressor),
                     self.repeat_comp("merge", Merge)),        
                                     (f"compressor_{N+1}", Compressor),
-                                    ("condenser", HeatExchangerSimple),
+                                    ("condenser", SimpleHeatExchanger),
                                     ("cycle_closer", CycleCloser),
         ]
 
@@ -61,7 +61,7 @@ class VaporInjectionHeatPumpStudy(HeatPumpStudy):
   
 
         self.add_components_and_connections(component_list, connection_list)
-        # self.add_condenser_cooling()# need to change condenser type to Condenser when used and HeatExchangerSimple when not used
+        # self.add_condenser_cooling()# need to change condenser type to Condenser when used and SimpleHeatExchanger when not used
 
     
     def set_boundary_conditions(self, T_cond=80, T_evap=-10):
