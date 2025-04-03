@@ -205,7 +205,7 @@ class HeatPumpStudy:
                     results[comp.label] = plotting_data[1]
         return results
 
-    def plot_ts_diag(self, filename, x_min=1000, x_max=2500, y_min=-30, y_max=120):
+    def plot_ts_diag(self, filename, x_min=None, x_max=None, y_min=None, y_max=None):
         from fluprodia import FluidPropertyDiagram
 
         diagram = FluidPropertyDiagram(self.working_fluid)
@@ -214,12 +214,29 @@ class HeatPumpStudy:
         result_dict = self.get_results()
         for key, data in result_dict.items():
             result_dict[key]["datapoints"] = diagram.calc_individual_isoline(**data)
-        T = np.arange(-50, 101, 5)
+
+        # Calculate limits from data if not provided
+        if x_min is None or x_max is None or y_min is None or y_max is None:
+            s_values = []
+            T_values = []
+            for data in result_dict.values():
+                s_values.extend(data["datapoints"]["s"])
+                T_values.extend(data["datapoints"]["T"])
+            
+            x_min = min(s_values) - 100 if x_min is None else x_min
+            x_max = max(s_values) + 100 if x_max is None else x_max
+            y_min = min(T_values) - 10 if y_min is None else y_min
+            y_max = max(T_values) + 10 if y_max is None else y_max
+
+        # Set temperature range based on calculated limits
+        T = np.arange(y_min, y_max + 1, 5)
         Q = np.linspace(0, 1, 41)
         fig, ax = plt.subplots(1, figsize=(8, 5))
         diagram.set_isolines(T=T, Q=Q)
         diagram.calc_isolines()
-        diagram.draw_isolines(diagram_type="Ts",  fig=fig, ax=ax, x_min=x_min, x_max=x_max, y_min=y_min, y_max=y_max)
+        
+        mydata = {"Q": {"values": Q}, "T": {"values": T}}
+        diagram.draw_isolines(diagram_type="Ts",  fig=fig, ax=ax, x_min=x_min, x_max=x_max, y_min=y_min, y_max=y_max,isoline_data=mydata)
 
         for key in result_dict:
             datapoints = result_dict[key]["datapoints"]
@@ -234,16 +251,28 @@ class HeatPumpStudy:
             )
         fig.savefig(f"{filename}.svg")
 
-    def plot_logph_diag(self, filename, x_min=300, x_max=700, y_min=1e0, y_max=6e1):
+    def plot_logph_diag(self, filename, x_min=None, x_max=None, y_min=None, y_max=None):
         from fluprodia import FluidPropertyDiagram
 
         diagram = FluidPropertyDiagram(self.working_fluid)
         diagram.set_unit_system(T="°C", p="bar", h="kJ/kg")
 
         result_dict = self.get_results()
-
         for key, data in result_dict.items():
             result_dict[key]["datapoints"] = diagram.calc_individual_isoline(**data)
+
+        # Calculate limits from data if not provided
+        if x_min is None or x_max is None or y_min is None or y_max is None:
+            h_values = []
+            p_values = []
+            for data in result_dict.values():
+                h_values.extend(data["datapoints"]["h"])
+                p_values.extend(data["datapoints"]["p"])
+            
+            x_min = min(h_values) - 50 if x_min is None else x_min
+            x_max = max(h_values) + 50 if x_max is None else x_max
+            y_min = min(p_values) * 0.8 if y_min is None else y_min
+            y_max = max(p_values) * 1.2 if y_max is None else y_max
 
         fig, ax = plt.subplots(1, figsize=(8, 5))
 
@@ -272,7 +301,7 @@ class HeatPumpStudy:
         fig.savefig(f"{filename}.svg")
 
     def plot_efficiency(self, filename, evap_range = (-10,11,5), cond_range =(50,71,5), efficiency_matrix = None):
-
+            
         if efficiency_matrix is None:
             efficiency_matrix = self.efficiency_matrix(evap_range,cond_range)
 
