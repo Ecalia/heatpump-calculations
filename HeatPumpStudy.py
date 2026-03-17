@@ -172,7 +172,7 @@ class HeatPumpStudy:
         )
         return Q / W
 
-    def efficiency_matrix(self, evap_range = (-10,11,5), cond_range =(50,71,5)):
+    def efficiency_matrix(self, evap_range = (-14,15,7), cond_range =(50,71,5)):
         # Calculate the efficiency of the heat pump system for each combination of condensation and evaporation temperature in 5K increments
         condensation_temps = np.arange(cond_range[0], cond_range[1], cond_range[2])
         evaporation_temps = np.arange(evap_range[0], evap_range[1], evap_range[2])
@@ -300,7 +300,7 @@ class HeatPumpStudy:
 
         fig.savefig(f"{filename}.svg")
 
-    def plot_efficiency(self, filename, evap_range = (-10,11,5), cond_range =(50,71,5), efficiency_matrix = None):
+    def plot_efficiency(self, filename, evap_range = (-14,15,7), cond_range =(50,71,5), efficiency_matrix = None):
             
         if efficiency_matrix is None:
             efficiency_matrix = self.efficiency_matrix(evap_range,cond_range)
@@ -332,7 +332,8 @@ class HeatPumpStudy:
                     round(efficiency_matrix[i, j], 2),
                     ha="center",
                     va="center",
-                    color="g",
+                    color="darkgrey",  
+                    fontweight="bold"  
                 )
 
         ax.set_title("Coefficient of Performance")

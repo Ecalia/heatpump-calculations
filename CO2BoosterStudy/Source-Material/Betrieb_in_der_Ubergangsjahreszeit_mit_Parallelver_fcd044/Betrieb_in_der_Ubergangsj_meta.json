@@ -1,0 +1,1073 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Betrieb in der \u00dcbergangsjahreszeit mit Parallelverdichter",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          212.598388671875,
+          32.921142578125
+        ],
+        [
+          488.0146484375,
+          32.921142578125
+        ],
+        [
+          488.0146484375,
+          45.31109619140625
+        ],
+        [
+          212.598388671875,
+          45.31109619140625
+        ]
+      ]
+    },
+    {
+      "title": "Auslegung: CO2 Anlagen",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          68.556396484375,
+          99.89111328125
+        ],
+        [
+          205.052490234375,
+          99.89111328125
+        ],
+        [
+          205.052490234375,
+          112.34262084960938
+        ],
+        [
+          68.556396484375,
+          112.34262084960938
+        ]
+      ]
+    },
+    {
+      "title": "Ergebnis",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          69.68701171875,
+          102.94677734375
+        ],
+        [
+          114.7060546875,
+          102.94677734375
+        ],
+        [
+          114.7060546875,
+          114.04946899414062
+        ],
+        [
+          69.68701171875,
+          114.04946899414062
+        ]
+      ]
+    },
+    {
+      "title": "NK-Stufe: Vorl\u00e4ufige Werte.",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          69.789794921875,
+          362.896484375
+        ],
+        [
+          175.76707458496094,
+          362.896484375
+        ],
+        [
+          175.76707458496094,
+          372.6592254638672
+        ],
+        [
+          69.789794921875,
+          372.6592254638672
+        ]
+      ]
+    },
+    {
+      "title": "Einsatzgrenzen 2MTE-5K (Parallel-Stufe)",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          68.970703125,
+          112.650390625
+        ],
+        [
+          282.330810546875,
+          112.650390625
+        ],
+        [
+          282.330810546875,
+          126.2177734375
+        ],
+        [
+          68.970703125,
+          126.2177734375
+        ]
+      ]
+    },
+    {
+      "title": "Einsatzgrenzen 4JTE-10K (NK-Stufe)",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.20751953125,
+          336.51220703125
+        ],
+        [
+          262.205078125,
+          336.51220703125
+        ],
+        [
+          262.205078125,
+          349.66845703125
+        ],
+        [
+          70.20751953125,
+          349.66845703125
+        ]
+      ]
+    },
+    {
+      "title": "p,h Diagramm",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          70.35302734375,
+          99.5455322265625
+        ],
+        [
+          144.1848907470703,
+          99.5455322265625
+        ],
+        [
+          144.1848907470703,
+          112.44482421875
+        ],
+        [
+          70.35302734375,
+          112.44482421875
+        ]
+      ]
+    },
+    {
+      "title": "NK-Stufe",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          118.443359375,
+          373.10302734375
+        ],
+        [
+          167.53253173828125,
+          373.10302734375
+        ],
+        [
+          167.53253173828125,
+          385.84814453125
+        ],
+        [
+          118.443359375,
+          385.84814453125
+        ]
+      ]
+    },
+    {
+      "title": "Parallel-Stufe",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          116.98828125,
+          486.3701171875
+        ],
+        [
+          191.49949645996094,
+          486.3701171875
+        ],
+        [
+          191.49949645996094,
+          497.9317626953125
+        ],
+        [
+          116.98828125,
+          497.9317626953125
+        ]
+      ]
+    },
+    {
+      "title": "Technische Daten: 2MTE-5K",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.78955078125,
+          99.1343994140625
+        ],
+        [
+          261.041015625,
+          99.1343994140625
+        ],
+        [
+          261.041015625,
+          115.939453125
+        ],
+        [
+          70.78955078125,
+          115.939453125
+        ]
+      ]
+    },
+    {
+      "title": "Ma\u00dfe und Anschl\u00fcsse",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.64404296875,
+          120.05078125
+        ],
+        [
+          186.9528045654297,
+          120.05078125
+        ],
+        [
+          186.9528045654297,
+          134.23486328125
+        ],
+        [
+          70.64404296875,
+          134.23486328125
+        ]
+      ]
+    },
+    {
+      "title": "Technische Daten",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          70.025634765625,
+          105.147216796875
+        ],
+        [
+          165.587890625,
+          105.147216796875
+        ],
+        [
+          165.587890625,
+          117.892333984375
+        ],
+        [
+          70.025634765625,
+          117.892333984375
+        ]
+      ]
+    },
+    {
+      "title": "Technische Daten: 4JTE-10K",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          70.86609649658203,
+          99.391357421875
+        ],
+        [
+          265.8427734375,
+          99.391357421875
+        ],
+        [
+          265.8427734375,
+          116.042236328125
+        ],
+        [
+          70.86609649658203,
+          116.042236328125
+        ]
+      ]
+    },
+    {
+      "title": "Ma\u00dfe und Anschl\u00fcsse",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          70.06201171875,
+          120.564697265625
+        ],
+        [
+          186.9527130126953,
+          120.564697265625
+        ],
+        [
+          186.9527130126953,
+          133.926513671875
+        ],
+        [
+          70.06201171875,
+          133.926513671875
+        ]
+      ]
+    },
+    {
+      "title": "Technische Daten",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          70.134765625,
+          105.25
+        ],
+        [
+          166.0244140625,
+          105.25
+        ],
+        [
+          166.0244140625,
+          117.9951171875
+        ],
+        [
+          70.134765625,
+          117.9951171875
+        ]
+      ]
+    },
+    {
+      "title": "Technische Daten: 4JTE-15K",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          70.86609649658203,
+          99.494140625
+        ],
+        [
+          265.98828125,
+          99.494140625
+        ],
+        [
+          265.98828125,
+          115.939453125
+        ],
+        [
+          70.86609649658203,
+          115.939453125
+        ]
+      ]
+    },
+    {
+      "title": "Ma\u00dfe und Anschl\u00fcsse",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          70.025634765625,
+          120.564697265625
+        ],
+        [
+          186.9527130126953,
+          120.564697265625
+        ],
+        [
+          186.9527130126953,
+          133.926513671875
+        ],
+        [
+          70.025634765625,
+          133.926513671875
+        ]
+      ]
+    },
+    {
+      "title": "Technische Daten",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          70.06201171875,
+          105.04443359375
+        ],
+        [
+          166.169921875,
+          105.04443359375
+        ],
+        [
+          166.169921875,
+          117.78955078125
+        ],
+        [
+          70.06201171875,
+          117.78955078125
+        ]
+      ]
+    },
+    {
+      "title": "Berechnung von CO\u2082 Booster Systemen",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          70.49853515625,
+          108.436279296875
+        ],
+        [
+          350.673828125,
+          108.436279296875
+        ],
+        [
+          350.673828125,
+          124.470458984375
+        ],
+        [
+          70.49853515625,
+          124.470458984375
+        ]
+      ]
+    },
+    {
+      "title": "Flashgas Bypass Booster System",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          69.9892578125,
+          175.039794921875
+        ],
+        [
+          253.6201171875,
+          175.039794921875
+        ],
+        [
+          253.6201171875,
+          187.990478515625
+        ],
+        [
+          69.9892578125,
+          187.990478515625
+        ]
+      ]
+    },
+    {
+      "title": "Flashgas Bypass",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          70.20751953125,
+          267.236328125
+        ],
+        [
+          137.28662109375,
+          267.236328125
+        ],
+        [
+          137.28662109375,
+          277.5146484375
+        ],
+        [
+          70.20751953125,
+          277.5146484375
+        ]
+      ]
+    },
+    {
+      "title": "Achtung: Gefahr von Nassbetrieb des Verdichters!",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          70.2802734375,
+          317.8056640625
+        ],
+        [
+          261.7685546875,
+          317.8056640625
+        ],
+        [
+          261.7685546875,
+          328.083984375
+        ],
+        [
+          70.2802734375,
+          328.083984375
+        ]
+      ]
+    },
+    {
+      "title": "Mischpunkt",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          70.06201171875,
+          387.287109375
+        ],
+        [
+          116.47900390625,
+          387.287109375
+        ],
+        [
+          116.47900390625,
+          397.8851318359375
+        ],
+        [
+          70.06201171875,
+          397.8851318359375
+        ]
+      ]
+    },
+    {
+      "title": "Betrieb in der \u00dcbergangsjahreszeit mit Parallelverdichter",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          212.598388671875,
+          31.63153076171875
+        ],
+        [
+          487.6878662109375,
+          31.63153076171875
+        ],
+        [
+          487.6878662109375,
+          45.45587158203125
+        ],
+        [
+          212.598388671875,
+          45.45587158203125
+        ]
+      ]
+    },
+    {
+      "title": "Verdichterauswahl",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          69.589111328125,
+          105.04443359375
+        ],
+        [
+          174.1728515625,
+          105.04443359375
+        ],
+        [
+          174.1728515625,
+          117.77960205078125
+        ],
+        [
+          69.589111328125,
+          117.77960205078125
+        ]
+      ]
+    },
+    {
+      "title": "\u00d6lmanagement",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          70.316650390625,
+          307.1162109375
+        ],
+        [
+          155.111328125,
+          307.1162109375
+        ],
+        [
+          155.111328125,
+          319.7327880859375
+        ],
+        [
+          70.316650390625,
+          319.7327880859375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          159
+        ],
+        [
+          "TableCell",
+          129
+        ],
+        [
+          "Line",
+          18
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 4,
+        "llm_error_count": 0,
+        "llm_tokens_used": 48695
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          399
+        ],
+        [
+          "TableCell",
+          248
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 3,
+        "llm_error_count": 0,
+        "llm_tokens_used": 52781
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          161
+        ],
+        [
+          "Line",
+          23
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          161
+        ],
+        [
+          "Line",
+          16
+        ],
+        [
+          "ListItem",
+          11
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          59
+        ],
+        [
+          "Line",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 8860
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          279
+        ],
+        [
+          "TableCell",
+          104
+        ],
+        [
+          "Line",
+          29
+        ],
+        [
+          "PageHeader",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TextInlineMath",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 3,
+        "llm_error_count": 0,
+        "llm_tokens_used": 56818
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          59
+        ],
+        [
+          "Line",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 8858
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          301
+        ],
+        [
+          "TableCell",
+          85
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 2,
+        "llm_error_count": 0,
+        "llm_tokens_used": 47792
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          59
+        ],
+        [
+          "Line",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 8849
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          301
+        ],
+        [
+          "TableCell",
+          112
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 3,
+        "llm_error_count": 0,
+        "llm_tokens_used": 56837
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1230
+        ],
+        [
+          "Line",
+          59
+        ],
+        [
+          "Text",
+          20
+        ],
+        [
+          "ListItem",
+          9
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 9005
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          772
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 2,
+        "llm_error_count": 0,
+        "llm_tokens_used": 29838
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\Betrieb_in_der_Ubergangsj"
+}

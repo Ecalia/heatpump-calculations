@@ -1,0 +1,6 @@
+tespy>=0.7.2
+CoolProp>=6.6.0
+fluprodia>=2.2
+numpy>=1.26
+matplotlib>=3.8
+pandas>=2.0

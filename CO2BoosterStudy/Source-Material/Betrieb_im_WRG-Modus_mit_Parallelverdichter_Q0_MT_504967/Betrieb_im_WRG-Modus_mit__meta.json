@@ -1,0 +1,1142 @@
+{
+  "table_of_contents": [
+    {
+      "title": "Betrieb im WRG-Modus mit Parallelverdichter",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          212.598388671875,
+          32.775634765625
+        ],
+        [
+          434.4495849609375,
+          32.775634765625
+        ],
+        [
+          434.4495849609375,
+          45.31109619140625
+        ],
+        [
+          212.598388671875,
+          45.31109619140625
+        ]
+      ]
+    },
+    {
+      "title": "1\n/ 12",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          755.2509765625,
+          78.93798828125
+        ],
+        [
+          779.9189453125,
+          78.93798828125
+        ],
+        [
+          779.9189453125,
+          89.81893920898438
+        ],
+        [
+          755.2509765625,
+          89.81893920898438
+        ]
+      ]
+    },
+    {
+      "title": "Auslegung: CO2 Anlagen",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          67.8883056640625,
+          99.9638671875
+        ],
+        [
+          205.1552734375,
+          99.9638671875
+        ],
+        [
+          205.1552734375,
+          112.34262084960938
+        ],
+        [
+          67.8883056640625,
+          112.34262084960938
+        ]
+      ]
+    },
+    {
+      "title": "Betrieb im WRG-Modus mit Parallelverdichter",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          212.598388671875,
+          33.066650390625
+        ],
+        [
+          434.4495849609375,
+          33.066650390625
+        ],
+        [
+          434.4495849609375,
+          45.31109619140625
+        ],
+        [
+          212.598388671875,
+          45.31109619140625
+        ]
+      ]
+    },
+    {
+      "title": "Ergebnis",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          69.584228515625,
+          103.09228515625
+        ],
+        [
+          114.192138671875,
+          103.09228515625
+        ],
+        [
+          114.192138671875,
+          114.04946899414062
+        ],
+        [
+          69.584228515625,
+          114.04946899414062
+        ]
+      ]
+    },
+    {
+      "title": "Einsatzgrenzen 2KTE-7K (Parallel-Stufe)",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          68.5341796875,
+          112.753173828125
+        ],
+        [
+          281.8486328125,
+          112.753173828125
+        ],
+        [
+          281.8486328125,
+          126.937255859375
+        ],
+        [
+          68.5341796875,
+          126.937255859375
+        ]
+      ]
+    },
+    {
+      "title": "Einsatzgrenzen 4JTE-10K (NK-Stufe)",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.134765625,
+          336.10107421875
+        ],
+        [
+          262.49609375,
+          336.10107421875
+        ],
+        [
+          262.49609375,
+          349.66845703125
+        ],
+        [
+          70.134765625,
+          349.66845703125
+        ]
+      ]
+    },
+    {
+      "title": "Einsatzgrenzen 4KTE-12K (NK-Stufe)",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          69.62548828125,
+          557.0849609375
+        ],
+        [
+          264.533203125,
+          557.0849609375
+        ],
+        [
+          264.533203125,
+          570.7208557128906
+        ],
+        [
+          69.62548828125,
+          570.7208557128906
+        ]
+      ]
+    },
+    {
+      "title": "p,h Diagramm",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          70.2802734375,
+          99.6483154296875
+        ],
+        [
+          144.1848907470703,
+          99.6483154296875
+        ],
+        [
+          144.1848907470703,
+          112.547607421875
+        ],
+        [
+          70.2802734375,
+          112.547607421875
+        ]
+      ]
+    },
+    {
+      "title": "NK-Stufe",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          118.66162109375,
+          373.10302734375
+        ],
+        [
+          167.625,
+          373.10302734375
+        ],
+        [
+          167.625,
+          385.84814453125
+        ],
+        [
+          118.66162109375,
+          385.84814453125
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          87.7412109375,
+          476.9140625
+        ],
+        [
+          205.8935546875,
+          476.9140625
+        ],
+        [
+          205.8935546875,
+          488.42578125
+        ],
+        [
+          87.7412109375,
+          488.42578125
+        ]
+      ]
+    },
+    {
+      "title": "Parallel-Stufe",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          112.7685546875,
+          486.5927734375
+        ],
+        [
+          191.49949645996094,
+          486.5927734375
+        ],
+        [
+          191.49949645996094,
+          500.3486328125
+        ],
+        [
+          112.7685546875,
+          500.3486328125
+        ]
+      ]
+    },
+    {
+      "title": "Technische Daten: 2KTE-7K",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.49853515625,
+          99.0830078125
+        ],
+        [
+          259.5859375,
+          99.0830078125
+        ],
+        [
+          259.5859375,
+          115.939453125
+        ],
+        [
+          70.49853515625,
+          115.939453125
+        ]
+      ]
+    },
+    {
+      "title": "Ma\u00dfe und Anschl\u00fcsse",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.825927734375,
+          120.359130859375
+        ],
+        [
+          186.95269775390625,
+          120.359130859375
+        ],
+        [
+          186.95269775390625,
+          134.337646484375
+        ],
+        [
+          70.825927734375,
+          134.337646484375
+        ]
+      ]
+    },
+    {
+      "title": "Technische Daten",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          70.025634765625,
+          104.9930419921875
+        ],
+        [
+          165.87890625,
+          104.9930419921875
+        ],
+        [
+          165.87890625,
+          118.097900390625
+        ],
+        [
+          70.025634765625,
+          118.097900390625
+        ]
+      ]
+    },
+    {
+      "title": "Technische Daten: 4JTE-10K",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          70.86609649658203,
+          99.7510986328125
+        ],
+        [
+          266.1337890625,
+          99.7510986328125
+        ],
+        [
+          266.1337890625,
+          115.939453125
+        ],
+        [
+          70.86609649658203,
+          115.939453125
+        ]
+      ]
+    },
+    {
+      "title": "Ma\u00dfe und Anschl\u00fcsse",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          70.20751953125,
+          120.564697265625
+        ],
+        [
+          186.9527130126953,
+          120.564697265625
+        ],
+        [
+          186.9527130126953,
+          133.515380859375
+        ],
+        [
+          70.20751953125,
+          133.515380859375
+        ]
+      ]
+    },
+    {
+      "title": "Technische Daten",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          69.84375,
+          105.04443359375
+        ],
+        [
+          165.7333984375,
+          105.04443359375
+        ],
+        [
+          165.7333984375,
+          117.78955078125
+        ],
+        [
+          69.84375,
+          117.78955078125
+        ]
+      ]
+    },
+    {
+      "title": "Technische Daten: 4KTE-12K",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          70.86609649658203,
+          100.11083984375
+        ],
+        [
+          269.771484375,
+          100.11083984375
+        ],
+        [
+          269.771484375,
+          115.939453125
+        ],
+        [
+          70.86609649658203,
+          115.939453125
+        ]
+      ]
+    },
+    {
+      "title": "Ma\u00dfe und Anschl\u00fcsse",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          70.171142578125,
+          120.66748046875
+        ],
+        [
+          186.95269775390625,
+          120.66748046875
+        ],
+        [
+          186.95269775390625,
+          133.6181640625
+        ],
+        [
+          70.171142578125,
+          133.6181640625
+        ]
+      ]
+    },
+    {
+      "title": "Technische Daten",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          69.9892578125,
+          105.0958251953125
+        ],
+        [
+          165.87890625,
+          105.0958251953125
+        ],
+        [
+          165.87890625,
+          117.78955078125
+        ],
+        [
+          69.9892578125,
+          117.78955078125
+        ]
+      ]
+    },
+    {
+      "title": "Berechnung von CO\u2082 Booster Systemen",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          70.2802734375,
+          108.5390625
+        ],
+        [
+          349.80078125,
+          108.5390625
+        ],
+        [
+          349.80078125,
+          124.23577880859375
+        ],
+        [
+          70.2802734375,
+          124.23577880859375
+        ]
+      ]
+    },
+    {
+      "title": "Flashgas Bypass Booster System",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          69.9892578125,
+          175.34814453125
+        ],
+        [
+          253.6201171875,
+          175.34814453125
+        ],
+        [
+          253.6201171875,
+          187.8876953125
+        ],
+        [
+          69.9892578125,
+          187.8876953125
+        ]
+      ]
+    },
+    {
+      "title": "Flashgas Bypass",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          70.35302734375,
+          267.44189453125
+        ],
+        [
+          137.43212890625,
+          267.44189453125
+        ],
+        [
+          137.43212890625,
+          277.72021484375
+        ],
+        [
+          70.35302734375,
+          277.72021484375
+        ]
+      ]
+    },
+    {
+      "title": "Achtung: Gefahr von Nassbetrieb des Verdichters!",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          70.2802734375,
+          318.01123046875
+        ],
+        [
+          261.7685546875,
+          318.01123046875
+        ],
+        [
+          261.7685546875,
+          327.87841796875
+        ],
+        [
+          70.2802734375,
+          327.87841796875
+        ]
+      ]
+    },
+    {
+      "title": "Mischpunkt",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          70.06201171875,
+          387.287109375
+        ],
+        [
+          116.47900390625,
+          387.287109375
+        ],
+        [
+          116.47900390625,
+          397.8851318359375
+        ],
+        [
+          70.06201171875,
+          397.8851318359375
+        ]
+      ]
+    },
+    {
+      "title": "Betrieb im WRG-Modus mit Parallelverdichter",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          212.598388671875,
+          31.45166015625
+        ],
+        [
+          435.94140625,
+          31.45166015625
+        ],
+        [
+          435.94140625,
+          45.6357421875
+        ],
+        [
+          212.598388671875,
+          45.6357421875
+        ]
+      ]
+    },
+    {
+      "title": "Verdichterauswahl",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          69.33447265625,
+          105.0958251953125
+        ],
+        [
+          174.318359375,
+          105.0958251953125
+        ],
+        [
+          174.318359375,
+          117.77960205078125
+        ],
+        [
+          69.33447265625,
+          117.77960205078125
+        ]
+      ]
+    },
+    {
+      "title": "\u00d6lmanagement",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          70.316650390625,
+          307.1162109375
+        ],
+        [
+          155.111328125,
+          307.1162109375
+        ],
+        [
+          155.111328125,
+          319.7327880859375
+        ],
+        [
+          70.316650390625,
+          319.7327880859375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          160
+        ],
+        [
+          "TableCell",
+          158
+        ],
+        [
+          "Line",
+          28
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Table",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 4,
+        "llm_error_count": 0,
+        "llm_tokens_used": 61201
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          411
+        ],
+        [
+          "TableCell",
+          252
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 2,
+        "llm_error_count": 0,
+        "llm_tokens_used": 43390
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          139
+        ],
+        [
+          "Line",
+          20
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Figure",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Text",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          159
+        ],
+        [
+          "Line",
+          16
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          57
+        ],
+        [
+          "Line",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 8851
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          277
+        ],
+        [
+          "TableCell",
+          104
+        ],
+        [
+          "Line",
+          29
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 38822
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          57
+        ],
+        [
+          "Line",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 8858
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          299
+        ],
+        [
+          "TableCell",
+          85
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 2,
+        "llm_error_count": 0,
+        "llm_tokens_used": 47802
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          57
+        ],
+        [
+          "Line",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 8860
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          293
+        ],
+        [
+          "TableCell",
+          112
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "TextInlineMath",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 39021
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          1228
+        ],
+        [
+          "Line",
+          59
+        ],
+        [
+          "Text",
+          19
+        ],
+        [
+          "ListItem",
+          9
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 1,
+        "llm_error_count": 0,
+        "llm_tokens_used": 14649
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          770
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\Betrieb_im_WRG-Modus_mit_"
+}
