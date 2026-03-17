@@ -11,8 +11,8 @@ from tespy.components import (
     Condenser,
     Turbine,
     CycleCloser,
-    SimpleHeatExchanger,
     HeatExchanger,
+    SimpleHeatExchanger,
 )
 from tespy.components.component import Component
 from tespy.connections import Connection
@@ -144,14 +144,14 @@ class HeatPumpStudy:
             # ("condenser", HeatExchanger), TODO: replace simple condenser with normal condenser
             ("consumer_pump", Pump),
             ("consumer", SimpleHeatExchanger),
-            ("consumer_cycle_closer", CycleCloser),
+            ("consumer_cycle_closer", CycleCloser)
         ]
 
         connection_list = [
-            ("consumer_cycle_closer", "out1", "consumer_pump", "in1", "11"),
-            ("consumer_pump", "out1", "condenser", "in2", "12"),
-            ("condenser", "out2", "consumer", "in1", "13"),
-            ("consumer", "out1", "consumer_cycle_closer", "in1", "10"),
+            ("consumer_cycle_closer", "out1", "consumer_pump", "in1"),
+            ("consumer_pump", "out1", "condenser", "in2"),
+            ("condenser", "out2", "consumer", "in1"),
+            ("consumer", "out1", "consumer_cycle_closer", "in1"),
         ]
         self.add_components_and_connections(component_list, connection_list)
         # TODO: replace old connections to the simple condenser with new connections to the normal condenser
